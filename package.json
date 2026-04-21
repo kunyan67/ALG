@@ -5,7 +5,8 @@
   "description": "一个可本地启动的算法可视化学习网站",
   "type": "module",
   "bin": {
-    "alg-visualizer": "bin/alg-visualizer.js"
+    "alg-visualizer": "bin/alg-visualizer.js",
+    "ALG": "bin/alg-visualizer.js"
   },
   "files": [
     "dist",

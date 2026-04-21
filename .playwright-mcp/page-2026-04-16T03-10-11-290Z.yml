@@ -1,0 +1,112 @@
+- generic [ref=e89]:
+  - complementary [ref=e90]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - heading "ALG" [level=1] [ref=e93]
+        - paragraph [ref=e94]: 算法可视化学习
+      - navigation [ref=e95]:
+        - button "排序算法" [ref=e97]:
+          - img [ref=e98]
+          - generic [ref=e100]: 排序算法
+        - button "查找算法" [ref=e102]:
+          - img [ref=e103]
+          - generic [ref=e105]: 查找算法
+        - button "图算法" [ref=e107]:
+          - img [ref=e108]
+          - generic [ref=e110]: 图算法
+        - button "回溯算法" [ref=e112]:
+          - img [ref=e113]
+          - generic [ref=e115]: 回溯算法
+        - button "树与高级数据结构" [ref=e117]:
+          - img [ref=e118]
+          - generic [ref=e120]: 树与高级数据结构
+        - button "贪心算法" [ref=e122]:
+          - img [ref=e123]
+          - generic [ref=e125]: 贪心算法
+        - button "动态规划" [ref=e127]:
+          - img [ref=e128]
+          - generic [ref=e130]: 动态规划
+  - main [ref=e131]:
+    - generic [ref=e132]:
+      - heading "冒泡排序" [level=1] [ref=e133]
+      - generic [ref=e134]:
+        - heading "问题描述" [level=2] [ref=e136]
+        - generic [ref=e138]:
+          - generic [ref=e139]: 冒泡排序是最基础的排序算法。它重复地遍历数组，每次比较相邻两个元素，如果顺序错误就交换它们。每一轮遍历会把当前未排序部分的最大值「冒泡」到末尾。
+          - generic [ref=e140]: 名字由来：较大的元素像气泡一样逐步「浮」到数组末端。
+          - table [ref=e142]:
+            - rowgroup [ref=e143]:
+              - row "特性 值" [ref=e144]:
+                - columnheader "特性" [ref=e145]
+                - columnheader "值" [ref=e146]
+            - rowgroup [ref=e147]:
+              - row "稳定性 稳定" [ref=e148]:
+                - cell "稳定性" [ref=e149]
+                - cell "稳定" [ref=e150]
+              - row "是否原地 是" [ref=e151]:
+                - cell "是否原地" [ref=e152]
+                - cell "是" [ref=e153]
+              - row "适用场景 小规模数据、教学演示" [ref=e154]:
+                - cell "适用场景" [ref=e155]
+                - cell "小规模数据、教学演示" [ref=e156]
+      - generic [ref=e157]:
+        - heading "解题思路" [level=2] [ref=e159]
+        - generic [ref=e161]:
+          - paragraph [ref=e162]:
+            - strong [ref=e163]: 基本流程
+            - text: ：
+          - paragraph [ref=e164]: 1. 外层循环 i 从 0 到 n-2，表示第几轮
+          - paragraph [ref=e165]: 2. 内层循环 j 从 0 到 n-2-i，比较 arr[j] 和 arr[j+1]
+          - paragraph [ref=e166]: 3. 如果 arr[j] > arr[j+1]，交换两者
+          - paragraph [ref=e167]: 4. 每轮结束后，末尾的 i+1 个元素已经有序
+          - paragraph
+          - paragraph [ref=e168]:
+            - strong [ref=e169]: 优化
+            - text: ：如果某一轮没有发生任何交换，说明数组已经有序，可以提前退出。
+      - generic [ref=e170]:
+        - heading "时间复杂度" [level=2] [ref=e172]
+        - generic [ref=e174]:
+          - paragraph [ref=e175]: 先看主循环、递归层数或状态总数一共会展开多少次，再看每次展开要处理多少工作量。 嵌套循环通常把各层规模相乘，分治和回溯通常看状态树规模与单状态代价。
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - text: 时间复杂度：
+              - code [ref=e178]: 最好 O(n)，平均/最坏 O(n²)
+            - generic [ref=e179]:
+              - text: 空间复杂度：
+              - code [ref=e180]: O(1)
+      - generic [ref=e181]:
+        - heading "解题过程动画" [level=2] [ref=e183]
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e188]: "38"
+            - generic [ref=e190]: "27"
+            - generic [ref=e192]: "43"
+            - generic [ref=e194]: "3"
+            - generic [ref=e196]: "9"
+            - generic [ref=e198]: "82"
+            - generic [ref=e200]: "10"
+          - generic [ref=e201]:
+            - generic [ref=e202]: 比较
+            - generic [ref=e204]: 交换
+            - generic [ref=e206]: 当前
+            - generic [ref=e208]: 已排好
+          - generic [ref=e210]:
+            - button "上一步" [ref=e211]
+            - button "播放" [ref=e212]
+            - button "下一步" [ref=e213]
+            - button "重置" [ref=e214]
+            - generic [ref=e215]:
+              - generic [ref=e216]: "速度:"
+              - slider [ref=e217]: "1100"
+            - generic [ref=e218]: 0 / 32
+      - generic [ref=e219]:
+        - heading "代码实现" [level=2] [ref=e221]
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - button "C++" [ref=e225]
+            - button "C" [ref=e226]
+            - button "Python" [ref=e227]
+            - button "JavaScript" [ref=e228]
+            - button "TypeScript" [ref=e229]
+            - button "Java" [ref=e230]
+          - code [ref=e233]: "#include <bits/stdc++.h> using namespace std; /* * C++ 实现说明： * 当前页面暂时复用同题思路的参考实现。 * 如果这里的代码源自 C 版本，请根据需要替换为更贴近现代 C++ 风格的写法。 */ #include <stdio.h> /** * 冒泡排序 * 每一轮把最大值冒泡到末尾 */ void bubbleSort(int arr[], int n) { for (int i = 0; i < n - 1; i++) { int swapped = 0; // 优化标记 for (int j = 0; j < n - 1 - i; j++) { // 相邻元素比较，逆序则交换 if (arr[j] > arr[j + 1]) { int tmp = arr[j]; arr[j] = arr[j + 1]; arr[j + 1] = tmp; swapped = 1; } } // 本轮无交换，数组已有序 if (!swapped) break; } } int main() { int arr[] = {38, 27, 43, 3, 9, 82, 10}; int n = 7; bubbleSort(arr, n); for (int i = 0; i < n; i++) printf(\"%d \", arr[i]); return 0; }"
